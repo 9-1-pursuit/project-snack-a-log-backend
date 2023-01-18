@@ -1,3 +1,5 @@
+// File required for GitHub Actions Postgres DB setup
+
 // http://vitaly-t.github.io/pg-promise/module-pg-promise.html
 const pgp = require("pg-promise")();
 require("dotenv").config();

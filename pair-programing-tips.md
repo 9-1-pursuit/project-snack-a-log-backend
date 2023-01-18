@@ -2,15 +2,15 @@
 
 ## Overview
 
-In this lab activity, you will practice collaborating on a project. You'll be building an app to track snacks and whether or not they are healthy.
+In this activity, you will practice collaborating on a project. You'll be building an app to track snacks and whether or not they are healthy.
 
 ## Getting Started
 
 - Go through [working in groups](./working-in-groups.md) with your partner(s).
 - Choose one person to be the owner, the other person(people) will be collaborators.
-- This person should use this repository as a template (look for the big green button). This will create it as a type of fork that is not tied back to the original repository.
-- Then, go into settings and add your partners as collaborators.
-- The collaborators will get an email asking them to confirm joining the repository.
+- This person should fork this repository to their account.
+- Then, go into `settings` on GitHub and add your partners as collaborators.
+- The collaborators will get an email asking them to confirm joining the repository, your collaborator(s) must accept the invitation.
 - Everyone should now clone the repo onto their machines.
 
 ### Practice Collaboration with GitHub
