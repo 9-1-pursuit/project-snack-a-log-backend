@@ -40,8 +40,9 @@ For this project, there are 40 features or functionality to build. You are requi
 1. Checks if the snack has enough fiber and protein, but too much sugar
 1. Checks if the snack does not have enough protein or fiber and has too much sugar
 1. Checks if the snack has invalid or missing information
+1. Back-end hosted and accessible online
 
-> **Total**: 21 tests/points
+> **Total**: 22 points
 
 ### Snack Schema
 
@@ -54,10 +55,9 @@ For this project, there are 40 features or functionality to build. You are requi
 
 ### Additional points:
 
-- Back-end hosted and accessible online: 1 point
 - Completed front-end (see project-snack-a-log-front-end for more details)
 
-> **Grand total**: 40 points
+> **Grand total**: 45 points
 
 ## Getting Started
 
