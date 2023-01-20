@@ -56,6 +56,20 @@ For this project, there are 40 features or functionality to build. You are requi
 - isHealthy: boolean
 - image: string, default `https://dummyimage.com/400x400/6e6c6e/e9e9f5.png&text=No+Image`
 
+
+### Seed Data
+
+```sql
+INSERT INTO snacks (name, fiber, protein, added_sugar, is_healthy, image) VALUES
+('Strawberries', 20, 10, 0, true, 'https://picsum.photos/id/1080/300/300'),
+('Raspberries', 16, 4, 0, true, 'https://picsum.photos/id/102/300/300'),
+('Honey Covered Granola',  30, 12, 22, false, 'https://picsum.photos/id/312/300/300'),
+('New Wave Nuts', 11, 55, 9, true, 'https://picsum.photos/id/139/300/300'),
+('Raw Onions & Turnips', 11, 9, 9, true, 'https://picsum.photos/id/292/300/300'),
+('Healthy Birthday Cake Square', 4, 8, 19, false, 'https://content.nutrisystem.com/images/products/alc/large/BirthdayCakeSquare_L.jpg');
+
+```
+
 ### Additional points:
 
 - Completed front-end (see project-snack-a-log-front-end for more details)
