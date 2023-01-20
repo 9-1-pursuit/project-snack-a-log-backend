@@ -44,6 +44,9 @@ For this project, there are 40 features or functionality to build. You are requi
 
 > **Total**: 22 points
 
+> **Note**: There are no back-end tests; your hosted application's functionality and code quality will be used to evaluate you.
+
+
 ### Snack Schema
 
 - name: string
