@@ -49,9 +49,9 @@ For this project, there are 40 features or functionality to build. You are requi
 
 ### Snack Schema
 - id: serial, should be primary key
-- name: string, must not be empty
-- fiber: number, default 0, must not be empty
-- protein: number, default 0, must not be empty
+- name: string, must have a value added
+- fiber: number, default 0, must have a value added
+- protein: number, default 0, must have a value added
 - added_sugar: number, default 0
 - isHealthy: boolean
 - image: string, default `https://dummyimage.com/400x400/6e6c6e/e9e9f5.png&text=No+Image`
