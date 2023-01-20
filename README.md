@@ -10,7 +10,7 @@ For this project, there are 40 features or functionality to build. You are requi
 
 > **Note**: You should start with the back-end.
 
-- Using the `project-snack-a-log-frontend` and `project-snack-a-log-backend` repos (links available through Canvas), create a full-stack web application by building the two applications and having them interact.
+- Using the [`project-snack-a-log-frontend`](https://github.com/9-1-pursuit/project-snack-a-log-frontend) and [`project-snack-a-log-backend`](https://github.com/9-1-pursuit/project-snack-a-log-backend) repos, create a full-stack web application by building the two applications and having them interact.
 - Use Express to build a complete CRUD back-end application that adheres to RESTful routes.
 - Use back-end unit tests to guide the building process.
 - Deploy the applications separately so that anyone can see them online and the two online applications can interact.
@@ -72,7 +72,7 @@ INSERT INTO snacks (name, fiber, protein, added_sugar, is_healthy, image) VALUES
 
 ### Additional points:
 
-- Completed front-end (see project-snack-a-log-front-end for more details)
+- Completed front-end (see [project-snack-a-log-front-end](https://github.com/9-1-pursuit/project-snack-a-log-frontend) for more details)
 
 > **Grand total**: 45 points
 
