@@ -82,7 +82,7 @@ Create a top-level folder that will contain both your back-end and front-end app
 
 1. Create a directory called `project-snack-a-log`.
 1. `cd` into the directory.
-1. Fork and clone the `project-snack-a-log-back-end` repo into your `project-snack-a-log` directory.
+1. Fork and clone the [`project-snack-a-log-back-end`](https://github.com/9-1-pursuit/project-snack-a-log-backend) repo into your `project-snack-a-log` directory.
 1. Change the name of your `project-snack-a-log-backend` directory to `back-end`.
 
 ### Back-end setup
