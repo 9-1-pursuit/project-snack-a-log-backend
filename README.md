@@ -118,6 +118,6 @@ Use the resources below to deploy your application.
 
 ### Back-end Deployment
 
-[Render.com Deployment Instructions](https://github.com/9-1-pursuit/guide-deployment/tree/main/render-express-postgres)
-[Render.com Deployment Video Part 1, Express](https://drive.google.com/drive/u/1/my-drive)
-[Render.com Deployment Video Part 2, Postgresql](https://tobecreated)
+1. [Render.com Deployment Instructions](https://github.com/9-1-pursuit/guide-deployment/tree/main/render-express-postgres)
+2. [Render.com Deployment Video Part 1, Express](https://drive.google.com/drive/u/1/my-drive)
+3. [Render.com Deployment Video Part 2, Postgresql](https://tobecreated)
