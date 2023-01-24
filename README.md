@@ -1,4 +1,4 @@
-# Full Stack Application Pair Project
+# Full Stack Application Group Project
 
 ## Snack-a-log
 
