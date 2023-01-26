@@ -15,7 +15,7 @@ For this project, there are 40 features or functionality to build. You are requi
 
 
 ### Groups
-- You will be working in groups of 5 for this 4 day Sprint.
+- You will be working in groups of 4 for this 4 day Sprint.
 - One person should create a Trello board and add all members to it
 - One person in the group should fork and clone the front end
 - One person in the group should fork and clone the backend
@@ -24,7 +24,7 @@ For this project, there are 40 features or functionality to build. You are requi
 - It is up to you how you choose to work as a team
 
 ### Question Asking
-- You will be given 4 tokens. These tokens represent the number of debugging questions **per team** you are allowed to ask an instructor during this complete sprint. (clarifying questions about the instructions are not included)
+- You will be given 5 tokens. These tokens represent the number of debugging questions **per team** you are allowed to ask an instructor during this complete sprint. (clarifying questions about the instructions are not included)
 
 ## User Stories and Acceptance Criteria
 
