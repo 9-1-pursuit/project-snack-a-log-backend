@@ -21,13 +21,13 @@ For this project, there are 40 features or functionality to build. You are requi
 ### Back-end
 
 1. Basic root route that returns a string, 'Welcome to Snack-A-Log'
-1. Snacks resource
-1. Get one (with the correct id)
-1. Get one (non-matching id, sends 404)
-1. Delete (with a valid id)
-1. Delete (handles invalid id)
-1. Get all snacks
-1. Create a snack with all fields completed
+1. Snacks resource using controllers, queries and Postgresql DB schema and seeded data
+1. Get all snacks route
+1. Get one route (with the correct id)
+1. Get one error (non-matching id, sends 404)
+1. Delete route (with a valid id)
+1. Delete error (handles invalid id)
+1. Create a snack route with all fields completed
 1. If no image is provided, create a snack and set a default image.
 1. Correctly capitalize snack name - for snack names with two or more letters
 1. Correctly capitalize snack name with multiple words
