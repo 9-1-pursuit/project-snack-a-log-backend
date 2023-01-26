@@ -20,8 +20,8 @@ For this project, there are 40 features or functionality to build. You are requi
 
 ### Back-end
 
-1. Basic root route that returns a string, 'Welcome to Snack-A-Log'
 1. Snacks resource using controllers, queries and Postgresql DB schema and seeded data
+1. Basic root route that returns a string, 'Welcome to Snack-A-Log'
 1. Get all snacks route
 1. Get one route (with the correct id)
 1. Get one error (non-matching id, sends 404)
