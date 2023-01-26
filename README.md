@@ -42,7 +42,9 @@ For this project, there are 45 features, points, functionalities to build. You a
 1. Correctly capitalize snack name - for snack names with two or more letters
 1. Correctly capitalize snack name with multiple words
 1. Correctly fix capitalization, regardless if the input is lowercase or uppercase
-1. Snack Health Check logic
+
+#### Snack Health Check Logic
+
 1. Checks if the snack has enough fiber
 1. Checks if the snack has enough protein
 1. Checks if the snack has enough fiber and protein
@@ -52,6 +54,9 @@ For this project, there are 45 features, points, functionalities to build. You a
 1. Checks if the snack does not have enough protein or fiber and has too much sugar
 1. Checks if the snack has invalid or missing information
 1. Back-end hosted and accessible online
+
+#### Presentation
+1. You will present as a group your application to the class. Each team member must participate (1 pt)
 
 > **Total**: 22 points
 
