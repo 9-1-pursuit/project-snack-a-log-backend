@@ -58,7 +58,7 @@ For this project, there are 45 features, points, functionalities to build. You a
 1. Back-end hosted and accessible online
 
 #### Presentation
-1. You will present as a group your application to the class. Each team member must participate (1 pt)
+1. You will present as a group your application to the class. Each team member must participate
 
 ### Point Structure<br />
 > Total Frontend: 23 points<br />
