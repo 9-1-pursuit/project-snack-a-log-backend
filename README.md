@@ -58,7 +58,7 @@ For this project, there are 45 features, points, functionalities to build. You a
 #### Presentation
 1. You will present as a group your application to the class. Each team member must participate (1 pt)
 
-> **Point Structure**<br />
+### Point Structure<br />
 > Total Frontend: 23 points<br />
 > Total Backend: 21 points<br />
 > Presentation: 1 point
