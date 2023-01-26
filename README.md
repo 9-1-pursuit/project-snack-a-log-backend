@@ -20,7 +20,8 @@ For this project, there are 40 features or functionality to build. You are requi
 - One person in the group should fork and clone the front end
 - One person in the group should fork and clone the backend
 - All group members should be added as collaborators to the repos
-
+- One possibility for approach to working could be to partner 2 people on the frontend and partner 2 people on the backend
+- It is up to you how you choose to work as a team
 
 ### Question Asking
 - You will be given 4 tokens. These tokens represent the number of debugging questions **per team** you are allowed to ask an instructor during this complete sprint. (clarifying questions about the instructions are not included)
