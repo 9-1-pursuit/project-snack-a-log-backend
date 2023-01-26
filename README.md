@@ -59,9 +59,9 @@ For this project, there are 45 features, points, functionalities to build. You a
 1. You will present as a group your application to the class. Each team member must participate (1 pt)
 
 > **Point Structure**<br />
-> **Total Frontend**: 23 points<br />
-> **Total Backend**: 21 points<br />
-> **Presentation**: 1 point
+> Total Frontend: 23 points<br />
+> Total Backend: 21 points<br />
+> Presentation: 1 point
 
 > **Note**: There are no back-end tests; your hosted application's functionality and code quality will be used to evaluate you.
 
