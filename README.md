@@ -14,7 +14,6 @@ For this project, there are 40 features or functionality to build. You are requi
 - Use Express to build a complete CRUD back-end application that adheres to RESTful routes.
 - Use back-end unit tests to guide the building process.
 - Deploy the applications separately so that anyone can see them online and the two online applications can interact.
-- [Snack-A-Log Video-Demo](https://drive.google.com/file/d/1aVnfu7ANdUPbfJhtSb45G2r0JSGtSI2t/view?usp=sharing)
 
 ## User Stories, Acceptance Criteria, and Code Quality Rubric
 
@@ -121,4 +120,5 @@ Use the resources below to deploy your application.
 
 1. [Render.com Deployment Instructions](https://github.com/9-1-pursuit/guide-deployment/tree/main/render-express-postgres)
 1. [Render.com Deployment Video Part 1, Express](https://drive.google.com/file/d/1JefmByjhsh8zoLwzpwdv-Hn9Wg4ezaOB/view?usp=sharing)
+1. [Snack-A-Log Video-Demo](https://drive.google.com/file/d/1aVnfu7ANdUPbfJhtSb45G2r0JSGtSI2t/view?usp=sharing)
 
