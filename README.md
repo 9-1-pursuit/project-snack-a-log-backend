@@ -53,6 +53,8 @@ For this project, there are 45 features, points, functionalities to build. You a
 1. Checks if the snack has enough fiber and protein, but too much sugar
 1. Checks if the snack does not have enough protein or fiber and has too much sugar
 1. Checks if the snack has invalid or missing information
+
+#### Deployment
 1. Back-end hosted and accessible online
 
 #### Presentation
