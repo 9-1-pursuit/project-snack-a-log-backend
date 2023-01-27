@@ -26,9 +26,8 @@ For this project, there are 45 features, points, functionalities to build. You a
 ### Question Asking
 - You will be given 4 tokens. These tokens represent the number of debugging questions **per team** you are allowed to ask an instructor during this complete sprint. (clarifying questions about the instructions are not included)
 
-## User Stories and Acceptance Criteria
-
-### Back-end
+## Back-end User Stories and Acceptance Criteria
+[Click here for Front-end Instructions](https://github.com/9-1-pursuit/project-snack-a-log-frontend)
 
 1. Snacks resource using controllers, queries and Postgresql DB schema and seeded data
 1. Basic root route that returns a string, 'Welcome to Snack-A-Log'
