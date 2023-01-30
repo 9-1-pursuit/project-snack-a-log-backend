@@ -6,6 +6,8 @@ const {
     getAllSnacks, getAsnack, createSnacks, updateSnacks, deleteSnacks
 } = require("../queries/snacks"); 
 
+const confirmHealth = require('../confirmHealth')
+
 //INDEX
 snacks.get("/", async (req, res) => {
     const allSnacks = await getAllSnacks(); 
@@ -17,7 +19,7 @@ snacks.get("/", async (req, res) => {
 });
 
 //SHOW
-snacks.get("/:id", async (req, res) => {
+snacks.get("/:id", confirmHealth, async (req, res) => {
     const {id} = req.params; 
     const snack = await getAsnack(id); 
     if(!snack.message) {
