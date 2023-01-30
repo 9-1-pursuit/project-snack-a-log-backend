@@ -1,23 +1,24 @@
-const express = require('express')
-const cors = require('cors')
-const app = express()
+// IMPORTS
+const express = require("express")
+const cors = require("cors")
 const snacksController = require("./controllers/snackController")
 
+// CONFIGURATION
+const app = express()
 
+// MIDDLEWARE
 app.use(express.json())
 app.use(cors())
 app.use("/snacks", snacksController)
 
-// CONFIGURATION
-app.get("/", (req , res) => {
-    res.send("Welcome to the Snacks App")
+// ROUTES
+app.get("/", (req, res) => {
+  res.send("Welcome to the Snacks App")
 })
 
-
-// MIDDLEWARE
-app.get("*", (req , res) => {
-    res.status(404).send("Page not found")
+// 404 page
+app.get("*", (req, res) => {
+  res.status(404).send("Page not found")
 })
-
 
 module.exports = app

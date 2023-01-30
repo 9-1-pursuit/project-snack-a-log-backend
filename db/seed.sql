@@ -10,7 +10,6 @@ INSERT INTO snacks (name, fiber, protein, added_sugar, is_healthy, image) VALUES
 ('Healthy Birthday Cake Square', 4, 8, 19, false, 'https://content.nutrisystem.com/images/products/alc/large/BirthdayCakeSquare_L.jpg');
 
 
-\c snack_a_log; 
 
 -- use advanced image search to choose images that are square (aspect ratio)
 -- https://www.google.com/advanced_image_search

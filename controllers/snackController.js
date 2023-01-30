@@ -1,6 +1,6 @@
 const express = require("express")
 
-const { getAllSnacks , getSnack , createSnacks , deleteSnacks, updateSnacks } = require("../queries/snacks")
+const { getAllSnacks , getOneSnack , createSnacks , deleteSnacks, updateSnacks } = require("../queries/snacks")
 
 const snacks = express.Router()
 
