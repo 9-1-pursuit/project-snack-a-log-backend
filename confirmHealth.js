@@ -1,3 +1,6 @@
-const confirmHealth = (snack) => {};
+const confirmHealth = (snack) => {
 
-module.exports = confirmHealth;
+       
+};
+
+module.exports = confirmHealth
