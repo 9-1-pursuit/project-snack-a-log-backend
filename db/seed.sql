@@ -1,6 +1,6 @@
 \c snack_a_log; 
 
-INSERT INTO snacks (name, fiber, protein, added_sugar, is_healthy, image) VALUES
+INSERT INTO snacks (name, fiber, protein, added_sugar, isHealthy, image) VALUES
 ('Strawberries', 20, 10, 0, true, 'https://picsum.photos/id/1080/300/300'),
 ('Raspberries', 16, 4, 0, true, 'https://picsum.photos/id/102/300/300'),
 ('Honey Covered Granola',  30, 12, 22, false, 'https://picsum.photos/id/312/300/300'),

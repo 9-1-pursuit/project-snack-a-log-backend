@@ -7,12 +7,12 @@ const checkName = (req, res, next)=> {
 }
 
 const checkBoolean = (req, res, next)=>{
-    if (req.body.is_healthy === true||
-        req.body.is_healthy === false||
-        req.body.is_healthy === undefined) {
+    if (req.body.isHealthy === true||
+        req.body.isHealthy === false||
+        req.body.isHealthy === undefined) {
             next()
         }else{
-            res.status(400).json({error: 'is_healthy must have a boolean value'})
+            res.status(400).json({error: 'isHealthy must have a boolean value'})
         }
 }
 

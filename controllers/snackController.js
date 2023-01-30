@@ -10,9 +10,9 @@ const {
 
 //INDEX 
 snacks.get('/', async(req,res)=>{
-    const {snacksId} = req.params
+    const {snackId} = req.params
     try {
-        const allSnacks = await getAllSnacks(snacksId)
+        const allSnacks = await getAllSnacks(snackId)
         res.status(200).json(allSnacks)
     } catch (error) {
         res.status(500).json({error:"Internal Server Error"})
@@ -39,7 +39,7 @@ snacks.post("/",checkName, checkBoolean, async(req, res)=>{
         const snack = await createSnack(req.body)
         res.status(200).json(snack)
     } catch (error) {
-        res.status(500).json.apply({error:error})
+        res.status(500).json({error:error})
     }
 })
 
