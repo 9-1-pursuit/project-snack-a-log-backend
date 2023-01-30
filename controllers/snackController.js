@@ -1,21 +1,21 @@
 const express = require("express"); 
 const snacks = express.Router(); 
 //VALIDATIONS SHOULD BE CALLED HERE
+//Log in should be here
 const {
     getAllSnacks, getAsnack, createSnacks, updateSnacks, deleteSnacks
 } = require("../queries/snacks"); 
 
 //INDEX
-
 snacks.get("/", async (req, res) => {
     const allSnacks = await getAllSnacks(); 
     if (allSnacks[0]) {
         res.status(200).json(allSnacks);
     } else {
         res.status(500).json({error: "Problem With The Server"})
-        //Getting 500 message please look over to find ERROR
     }
 });
+
 //SHOW
 snacks.get("/:id", async (req, res) => {
     const {id} = req.params; 
