@@ -57,8 +57,8 @@ For this project, there are 45 features, points, functionalities to build. You a
 #### Snack Health Criteria
 (the snack is considered unhealthy when one of the two conditions are met)
 
-1. If sugar is more than 5 the snack is unhealthy
-1. If protein is less than 5 and fiber is less than 5 the snack is unhealthy
+1. Sugar is more than 5
+1. Protein is less than 5 and Fiber is less than 5
 
 #### Deployment
 1. Back-end hosted and accessible online
