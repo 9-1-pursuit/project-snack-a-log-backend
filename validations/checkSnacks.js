@@ -24,4 +24,4 @@ const validateImage = (req, res, next)=>{
     }
 }
 
-module.exports = {checkName, checkBoolean, validateImage}
+module.exports = {checkName, checkBoolean, validateImage};
