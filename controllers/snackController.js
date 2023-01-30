@@ -43,11 +43,11 @@ snacks.get("/:id", async (req , res) => {
  snacks.delete("/:id", async (req ,res) => {
    const {id} = req.params
    const deletedSnacks = await deleteSnack(id)
-   if(deletedPlays.id){
+   if(deletedSnacks.id){
      res.status(200).json(deletedSnacks)
    }
    else{
-     res.status(404).json("Game not found")
+     res.status(404).json("Snacks not found")
    }
  })
  
@@ -57,7 +57,7 @@ snacks.get("/:id", async (req , res) => {
  snacks.put("/:id", async (req, res) => {
    const { id } = req.params;
    const updatedSnacks = await updateSnack(id, req.body);
-   res.status(200).json(updatedJep);
+   res.status(200).json(updatedSnacks);
  });
 
 
