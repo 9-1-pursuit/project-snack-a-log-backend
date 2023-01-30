@@ -53,6 +53,11 @@ For this project, there are 45 features, points, functionalities to build. You a
 1. Checks if the snack does not have enough protein or fiber and has too much sugar
 1. Checks if the snack has invalid or missing information
 
+
+#### Snack Health Criteria
+1. If sugar is more than 5 the snack is unhealthy
+1. If protein is less than 5 and fiber is less than 5 the snack is unhealthy
+
 #### Deployment
 1. Back-end hosted and accessible online
 
@@ -85,8 +90,8 @@ INSERT INTO snacks (name, fiber, protein, added_sugar, is_healthy, image) VALUES
 ('Strawberries', 20, 10, 0, true, 'https://picsum.photos/id/1080/300/300'),
 ('Raspberries', 16, 4, 0, true, 'https://picsum.photos/id/102/300/300'),
 ('Honey Covered Granola',  30, 12, 22, false, 'https://picsum.photos/id/312/300/300'),
-('New Wave Nuts', 11, 55, 9, true, 'https://picsum.photos/id/139/300/300'),
-('Raw Onions & Turnips', 11, 9, 9, true, 'https://picsum.photos/id/292/300/300'),
+('New Wave Nuts', 11, 55, 5, true, 'https://picsum.photos/id/139/300/300'),
+('Raw Onions & Turnips', 11, 9, 2, true, 'https://picsum.photos/id/292/300/300'),
 ('Healthy Birthday Cake Square', 4, 8, 19, false, 'https://content.nutrisystem.com/images/products/alc/large/BirthdayCakeSquare_L.jpg');
 
 ```
