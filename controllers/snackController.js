@@ -1,6 +1,6 @@
 const express = require("express"); 
 const snacks = express.Router(); 
-//VALIDATIONS SHOULD BE CALLED HERE
+const {checkName, checkBooleen, validateImage} = require('../validations/validSnacks')
 //Log in should be here
 const {
     getAllSnacks, getAsnack, createSnacks, updateSnacks, deleteSnacks
@@ -30,7 +30,7 @@ snacks.get("/:id", confirmHealth, async (req, res) => {
 });
 
 //CREATE
-snacks.post("/", async (req, res) => {
+snacks.post("/", checkName, validateImage, async (req, res) => {
     try {
         const createSnack = await createSnacks(req.body);
         res.status(200).json(createSnack)
@@ -40,7 +40,7 @@ snacks.post("/", async (req, res) => {
 });
 
 //UPDATE
-snacks.put("/:id", async (req, res) => {
+snacks.put("/:id", checkName, validateImage,  async (req, res) => {
     const {id} = req.params
     try {
         const updateSnack = await updateSnacks(id, req.body); 
