@@ -6,11 +6,11 @@ CREATE DATABASE snack_a_log;
 CREATE TABLE snacks(
     id SERIAL PRIMARY KEY,
     name TEXT NOT NULL,
-    fiber NUMBER,
-    protein NUMBER,
-    added_sugar NUMBER,
+    fiber NUMERIC,
+    protein NUMERIC,
+    added_sugar NUMERIC,
     is_healthy BOOLEAN,
     image TEXT
-)
+);
 
 
