@@ -34,10 +34,19 @@ snacks.get("/:id", async (req , res) => {
     // check fiber, protein, and added sugar values
     const fiber = req.body.fiber;
     const protein = req.body.protein;
-    const added_sugar = req.body.added_sugar
+    const added_sugar = req.body.added_sugar;
 
-    // Set the is_heatlhy variable based on fiber, protien
-    const snack = await createSnacks(req.body);
+    // Set the is_heatlhy variable based on fiber, protein, and added sugar values
+    let is_healthy = false; 
+    if(fiber >=5 && protein >= 5 && added_sugar <= 5){
+      is_healthy = true;
+    }
+
+    // Store the req.body and the is_healthy variable in a new object
+    const  newBody = { ...req.body, is_healthy: is_healthy}
+    
+    // send the newbody object to the database
+    const snack = await createSnacks(newBody)
     res.json(snack);
   } catch (error) {
     res.status(400).json({ error: error });
@@ -62,7 +71,7 @@ snacks.get("/:id", async (req , res) => {
  snacks.put("/:id", async (req, res) => {
    const { id } = req.params;
    const updatedSnacks = await updateSnacks(id, req.body);
-   res.status(200).json(updatedJep);
+   res.status(200).json(updatedSnacks);
  });
 
 
