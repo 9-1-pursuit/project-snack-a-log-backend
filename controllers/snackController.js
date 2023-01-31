@@ -2,7 +2,7 @@ const express = require("express")
 
 const {
   getAllSnacks,
-  getOneSnack,
+  getOneSnacks,
   createSnacks,
   deleteSnacks,
   updateSnacks,
@@ -27,7 +27,7 @@ snacks.get("/", async (req, res) => {
 
 snacks.get("/:id", async (req, res) => {
   const { id } = req.params
-  const snack = await getSnack(id)
+  const snack = await getOneSnacks(id)
   if (!snack.message) {
     res.json(snack)
   } else {
