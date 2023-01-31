@@ -39,11 +39,20 @@ snacks.get('/:id', async (req, res) => {
 
 //CREATE
 snacks.post('/', checkName, checkBoolean, async (req, res) => {
+  let copy = { ...req.body };
+  const capitalized = copy.name
+    .toLowerCase()
+    .split(' ')
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+  copy.name = capitalized;
+  console.log({ copy });
+
   try {
-    const snack = await createSnack(req.body);
+    const snack = await createSnack(copy);
     res.status(200).json(snack);
   } catch (error) {
-    res.status(500).json({ error: error });
+    res.status(500).json({ error: 'error' });
   }
 });
 
