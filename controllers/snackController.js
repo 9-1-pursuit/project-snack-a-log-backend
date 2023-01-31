@@ -39,10 +39,10 @@ snacks.get("/:id", async (req, res) => {
 
 snacks.post(
   "/",
-  // validateAndSetImage,
-  // checkName,
-  // checkBoolean,
-  // confirmHealth,
+  validateAndSetImage,
+  checkName,
+  checkBoolean,
+  confirmHealth,
   async (req, res) => {
     const copy = { ...req.body }
     const updatedSnack2 = req.body.name
