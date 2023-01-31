@@ -1,18 +1,17 @@
 const checkName = (req, res, next) => {
   const { name } = req.body.name
-  if (name) {
-    //  Capitalize the name with two or more letters
-    name = name
-      .trim()
-      .split(" ")
-      .map((letter) => {
-        return letter.charAt(0).toUpperCase() + letter.slice(1).toLowerCase()
-      })
-      .join()
-    next()
-  } else {
-    res.status(400).json({ error: "Name is required" })
+  if (!name) {
+    return res.status(400).json({ error: "Name is required" })
   }
+  //  Capitalize the name with two or more letters
+  req.body.name = name
+    .trim()
+    .split(" ")
+    .map(
+      (letter) => letter.charAt(0).toUpperCase() + letter.slice(1).toLowerCase()
+    )
+    .join()
+  next()
 }
 
 const checkBoolean = (req, res, next) => {
