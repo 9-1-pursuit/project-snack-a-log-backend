@@ -1,11 +1,8 @@
 const db = require('../db/dbConfig.js');
 
-const getAllSnacks = async (snackId) => {
+const getAllSnacks = async () => {
   try {
-    const allSnacks = await db.any(
-      'SELECT * FROM snacks WHERE snack_id = $1',
-      snackId
-    );
+    const allSnacks = await db.any('SELECT * FROM snacks');
     return allSnacks;
   } catch (error) {
     return error;
@@ -24,13 +21,13 @@ const getSnack = async (id) => {
 const createSnack = async (snack) => {
   try {
     const newSnack = await db.one(
-      'INSERT INTO snacks (name,fiber,protein, added_sugar, isHealthy,image) VALUES($1, $2, $3, $4, $5, $6) RETURNING *',
+      'INSERT INTO snacks (name,fiber,protein, added_sugar, is_healthy,image) VALUES($1, $2, $3, $4, $5, $6) RETURNING *',
       [
         snack.name,
         snack.fiber,
         snack.protein,
         snack.added_sugar,
-        snack.isHealthy,
+        snack.is_healthy,
         snack.image,
       ]
     );
@@ -54,13 +51,13 @@ const deleteSnack = async (id) => {
 const updateSnack = async (id, snack) => {
   try {
     const updatedSnack = await db.one(
-      'UPDATE snacks SET name=$1, fiber=$2, protein=$3, added_sugar=$4, snack.isHealthy= $5, snack.image=$6 WHERE id=$7 RETURNING *',
+      'UPDATE snacks SET name=$1, fiber=$2, protein=$3, added_sugar=$4, is_healthy= $5, image=$6 WHERE id=$7 RETURNING *',
       [
         snack.name,
         snack.fiber,
         snack.protein,
         snack.added_sugar,
-        snack.isHealthy,
+        snack.is_healthy,
         snack.image,
         id,
       ]
