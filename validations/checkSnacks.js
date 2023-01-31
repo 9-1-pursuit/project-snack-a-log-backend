@@ -1,7 +1,8 @@
 const checkName = (req, res, next) => {
-  if (req.body.name) {
+  const { name } = req.body.name
+  if (name) {
     //  Capitalize the name with two or more letters
-    req.body.name = req.body.name
+    name = name
       .trim()
       .split(" ")
       .map((letter) => {

@@ -74,7 +74,7 @@ snacks.post("/", validateImage, checkName, checkBoolean, async (req, res) => {
 snacks.delete("/:id", async (req, res) => {
   const { id } = req.params
   const deletedSnacks = await deleteSnacks(id)
-  if (deletedPlays.id) {
+  if (deletedSnacks.id) {
     res.status(200).json(deletedSnacks)
   } else {
     res.status(404).json("Snack not found")
