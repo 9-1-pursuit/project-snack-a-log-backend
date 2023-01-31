@@ -2,7 +2,7 @@ const db = require("../db/dbConfig.js")
 // ROUTES
 
 //All - (Index) route
-const getAllSnacks = async () => {
+const getAllSnack = async () => {
   try {
     const allSnacks = await db.any("SELECT * FROM snacks")
     return allSnacks
@@ -12,7 +12,7 @@ const getAllSnacks = async () => {
 }
 
 // One (Show) Route
-const getOneSnacks = async (id) => {
+const getOneSnack = async (id) => {
   try {
     const oneSnacks = await db.one("SELECT * FROM snacks WHERE id=$1", id)
     return oneSnacks
@@ -22,7 +22,7 @@ const getOneSnacks = async (id) => {
 }
 
 // CREATE - (New) route
-const createSnacks = async (snacks) => {
+const createSnack = async (snacks) => {
   try {
     const createdOneSnacks = await db.one(
       "INSERT INTO snacks (name, fiber, protein, added_sugar, is_healthy, image) VALUES($1, $2, $3, $4, $5, $6) RETURNING *",
@@ -42,7 +42,7 @@ const createSnacks = async (snacks) => {
 }
 
 // DELETE
-const deleteSnacks = async (id) => {
+const deleteSnack = async (id) => {
   try {
     const deletedSnacks = await db.one(
       "DELETE FROM snacks WHERE id=$1 RETURNING *",
@@ -55,7 +55,7 @@ const deleteSnacks = async (id) => {
 }
 
 // UPDATE
-const updateSnacks = async (id, snacks) => {
+const updateSnack = async (id, snacks) => {
   try {
     const updatedSnacks = await db.one(
       "UPDATE snacks SET name, fiber, protein, added_sugar, is_healthy, image WHERE id=$6 RETURNING *",
@@ -76,9 +76,9 @@ const updateSnacks = async (id, snacks) => {
 }
 
 module.exports = {
-  getAllSnacks,
-  getOneSnacks,
-  createSnacks,
-  deleteSnacks,
-  updateSnacks,
+  getAllSnack,
+  getOneSnack,
+  createSnack,
+  deleteSnack,
+  updateSnack,
 }
