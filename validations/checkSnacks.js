@@ -1,14 +1,7 @@
 const checkName = (req, res, next) => {
-  // let name = req.body.name
   if (req.body.name) {
     // Capitalize the name with two or more letters
-    req.body.name = req.body.name
-      .trim()
-      .split(" ")
-      .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
-      .join(" ")
     next()
-    return req.body.name
   } else {
     res.status(400).json({ error: "Name is required" })
   }
