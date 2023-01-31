@@ -9,6 +9,7 @@ const confirmHealth = require('../confirmHealth')
 snacks.get("/", async (req , res) => {
     const allSnacks = await getAllSnacks()
  
+    console.log(allSnacks)
      if(allSnacks[0]){
          res.status(200).json(allSnacks)
      }
