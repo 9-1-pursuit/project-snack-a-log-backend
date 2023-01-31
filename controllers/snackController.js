@@ -71,7 +71,7 @@ snacks.post(
 
       // send the newbody object to the database
       const snack = await createSnacks(newBody)
-      res.json(snack)
+      res.status(200).json(snack)
     } catch (error) {
       res.status(400).json({ error: "Snack not Healthy" })
     }
