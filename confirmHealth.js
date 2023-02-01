@@ -1,30 +1,34 @@
-const confirmHealth = (snack, next) => {
+// const confirmHealth = (req,res, next) => {
+//     let healthStatus = false
 
-if(snack.fiber <5 && 
-    snack.protein <5){
-    
-    let healthStatus = false 
+//     if(req.body.fiber <5 && 
+//         req.body.protein <5){
+            
+//             console.log(req.body.fiber)
 
-        if(healthStatus === snack.is_healthy){
-            next()
-        }else {
-            console.log ("line10" ,healthStatus)
-            res.status(400).json({ error: "is_healthy status incorrect" });
-          }
+//         if( healthStatus === req.body.is_healthy){
+//             console.log ("line10" ,healthStatus)
+//             next()
+//         }else {
+//             console.log ("line13" ,healthStatus)
+//             console.log( "is_healthy status incorrect" );
+//         next()
+//         }
 
-    }else if (snack.added_sugar >5){
-        let healthStatus = false 
-        if(healthStatus === snack.is_healthy){
-            console.log ("line18" ,healthStatus)
-            next()
-        }else {
-            res.status(400).json({ error: "is_healthy status incorrect" });
-          }
-    }
+//     }else if (req.body.added_sugar >= 6){
+        
+//         if(req.body.is_healthy === healthStatus){
+//             console.log ("line21" ,healthStatus)
+//             next()
+//         }else {
+//             console.log ("line24" ,req.body.is_healthy)
+//             next()
+//         }
+//     }
 
-};
+// };
 
-// Sugar is more than 5
-// Protein is less than 5 and Fiber is less than 5
+// // Sugar is more than 5
+// // Protein is less than 5 and Fiber is less than 5
 
-module.exports = confirmHealth;
+// module.exports = {confirmHealth};

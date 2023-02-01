@@ -4,12 +4,11 @@ const { getAllSnacks , getSnack , createSnack , deleteSnack, updateSnack } = req
 
 const snacks = express.Router()
 
-const confirmHealth = require('../confirmHealth')
+// const { confirmHealth} = require('../confirmHealth')
 
 snacks.get("/", async (req , res) => {
     const allSnacks = await getAllSnacks()
  
-    console.log(allSnacks)
      if(allSnacks[0]){
          res.status(200).json(allSnacks)
      }
@@ -59,7 +58,11 @@ snacks.get("/:id", async (req , res) => {
  snacks.put("/:id",  async (req, res) => {
    const { id } = req.params;
    const updatedSnacks = await updateSnack(id, req.body);
-   res.status(200).json(updatedSnacks);
+   if(updatedSnacks){
+     res.status(200).json(updatedSnacks);
+   }else {
+    res.status(404).json({error:  "is_healthy status incorrect"})
+   }
  });
 
 
