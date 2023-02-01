@@ -142,6 +142,7 @@ Use the resources below to deploy your application.
 
 1. [Render.com Deployment Instructions](https://github.com/9-1-pursuit/guide-deployment/tree/main/render-express-postgres)
 1. [Render.com Deployment Video Part 1, Express](https://drive.google.com/file/d/1JefmByjhsh8zoLwzpwdv-Hn9Wg4ezaOB/view?usp=sharing)
+1. [Render.com Deployment Video Part 2, PostgreSQL](https://drive.google.com/file/d/1_egu17vjEOjk6Hm94-yPTB2KYDGrISLq/view?usp=sharing)
 1. [Snack-A-Log Video-Demo](https://drive.google.com/file/d/1aVnfu7ANdUPbfJhtSb45G2r0JSGtSI2t/view?usp=sharing)
 1. [Front-end Instructions](https://github.com/9-1-pursuit/project-snack-a-log-frontend)
 
