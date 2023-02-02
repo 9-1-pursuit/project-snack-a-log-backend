@@ -2,7 +2,9 @@ const express = require("express")
 
 const { getAllSnacks , getSnack , createSnack , deleteSnack, updateSnack } = require("../queries/snacks")
 
-// const {confirmHealth} = require("../confirmHealth")
+
+const {confirmHealth} = require("../confirmHealth")
+
 
 const snacks = express.Router()
 
@@ -31,7 +33,9 @@ snacks.get("/:id", async (req , res) => {
  })
  
  
- snacks.post("/", async (req, res) => {
+
+ snacks.post("/", confirmHealth, async (req, res,next) => {
+
    try {
      const snack = await createSnack(req.body);
      res.json(snack);
@@ -55,8 +59,8 @@ snacks.get("/:id", async (req , res) => {
  
  
  
- 
- snacks.put("/:id",  async (req, res) => {
+ snacks.put("/:id",confirmHealth,  async (req, res, next) => {
+
    const { id } = req.params;
    const updatedSnacks = await updateSnack(id, req.body);
    res.status(200).json(updatedSnacks);
