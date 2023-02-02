@@ -47,7 +47,7 @@ snacks.get("/:id", async (req , res) => {
      res.status(200).json(deletedSnacks)
    }
    else{
-     res.status(404).json("Snacks not found")
+     res.status(404).json({error: "Snacks not found"})
    }
  })
  
