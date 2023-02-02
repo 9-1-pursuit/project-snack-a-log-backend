@@ -44,13 +44,20 @@ snacks.get("/:id", async (req , res) => {
  
  snacks.delete("/:id", async (req ,res) => {
    const {id} = req.params
-   const deletedSnacks = await deleteSnack(id)
-   if(deletedSnacks.id){
-     res.status(200).json(deletedSnacks)
-   }
-   else{
-     res.status(404).json("Snacks not found")
-   }
+
+const arr = id.split(",")
+
+
+for(let i = 0; i < arr.length ; i++){
+  const deletedSnacks = await deleteSnack(arr)
+  if(deletedSnacks.id){
+    res.status(200).json(deletedSnacks)
+  }
+  else{
+    res.status(404).json("Snacks not found")
+  }
+
+}
  })
  
  
