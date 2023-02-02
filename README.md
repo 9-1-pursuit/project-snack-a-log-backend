@@ -53,6 +53,13 @@ For this project, there are 45 features, points, functionalities to build. You a
 1. Checks if the snack does not have enough protein or fiber and has too much sugar
 1. Checks if the snack has invalid or missing information
 
+
+#### Snack Health Criteria
+(the snack is considered unhealthy when one of the two conditions are met)
+
+1. Sugar is more than 5
+1. Protein is less than 5 and Fiber is less than 5
+
 #### Deployment
 1. Back-end hosted and accessible online
 
@@ -71,10 +78,10 @@ For this project, there are 45 features, points, functionalities to build. You a
 ### Snack Schema
 - id: serial, should be primary key
 - name: string, name value is required
-- fiber: number, default 0, fiber value is required
-- protein: number, default 0, protein value is required
+- fiber: number, default 0
+- protein: number, default 0
 - added_sugar: number, default 0
-- isHealthy: boolean
+- is_healthy: boolean
 - image: string, default `https://dummyimage.com/400x400/6e6c6e/e9e9f5.png&text=No+Image`
 
 
@@ -85,8 +92,8 @@ INSERT INTO snacks (name, fiber, protein, added_sugar, is_healthy, image) VALUES
 ('Strawberries', 20, 10, 0, true, 'https://picsum.photos/id/1080/300/300'),
 ('Raspberries', 16, 4, 0, true, 'https://picsum.photos/id/102/300/300'),
 ('Honey Covered Granola',  30, 12, 22, false, 'https://picsum.photos/id/312/300/300'),
-('New Wave Nuts', 11, 55, 9, true, 'https://picsum.photos/id/139/300/300'),
-('Raw Onions & Turnips', 11, 9, 9, true, 'https://picsum.photos/id/292/300/300'),
+('New Wave Nuts', 11, 55, 5, true, 'https://picsum.photos/id/139/300/300'),
+('Raw Onions & Turnips', 11, 9, 2, true, 'https://picsum.photos/id/292/300/300'),
 ('Healthy Birthday Cake Square', 4, 8, 19, false, 'https://content.nutrisystem.com/images/products/alc/large/BirthdayCakeSquare_L.jpg');
 
 ```
@@ -135,6 +142,7 @@ Use the resources below to deploy your application.
 
 1. [Render.com Deployment Instructions](https://github.com/9-1-pursuit/guide-deployment/tree/main/render-express-postgres)
 1. [Render.com Deployment Video Part 1, Express](https://drive.google.com/file/d/1JefmByjhsh8zoLwzpwdv-Hn9Wg4ezaOB/view?usp=sharing)
+1. [Render.com Deployment Video Part 2, PostgreSQL](https://drive.google.com/file/d/1_egu17vjEOjk6Hm94-yPTB2KYDGrISLq/view?usp=sharing)
 1. [Snack-A-Log Video-Demo](https://drive.google.com/file/d/1aVnfu7ANdUPbfJhtSb45G2r0JSGtSI2t/view?usp=sharing)
 1. [Front-end Instructions](https://github.com/9-1-pursuit/project-snack-a-log-frontend)
 
