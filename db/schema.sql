@@ -3,7 +3,7 @@ CREATE DATABASE snack_a_log;
 
 \c snack_a_log; 
 
-DROP TABLE IF EXISTS snacks
+DROP TABLE IF EXISTS snacks;
 
 CREATE TABLE snacks (
 id SERIAL PRIMARY KEY,
