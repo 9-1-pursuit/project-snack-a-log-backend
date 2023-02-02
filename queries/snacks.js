@@ -44,7 +44,7 @@ const deleteSnack = async (id) => {
 const updateSnack = async (id, snack) => {
     try{
         const updatedSnack = await db.one("UPDATE snacks SET name=$1, fiber=$2, protein=$3, added_sugar=$4, is_healthy=$5, image=$6, selected=$7, bookmarked=$8 WHERE id=$9 RETURNING *", 
-        [snack.name, snack.fiber, snack.protein, snack.added_sugar, snack.is_healthy, snack.image, snack.selected, bookmarked, id])
+        [snack.name, snack.fiber, snack.protein, snack.added_sugar, snack.is_healthy, snack.image, snack.selected, snack.bookmarked, id])
     return updatedSnack
     } catch(e){
         return e
