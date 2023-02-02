@@ -44,15 +44,13 @@ snacks.get("/:id", async (req , res) => {
  
  snacks.delete("/:id", async (req ,res) => {
    const {id} = req.params
-
-
-  const deletedSnacks = await deleteSnack(id)
-  if(deletedSnacks.id){
-    res.status(200).json(deletedSnacks)
-  }
-  else{
-    res.status(404).json("Snacks not found")
-  }
+   const deletedSnacks = await deleteSnack(id)
+   if(deletedSnacks.id){
+     res.status(200).json(deletedSnacks)
+   }
+   else{
+     res.status(404).json({error: "Snacks not found"})
+   }
  })
  
  
