@@ -7,24 +7,35 @@ const confirmHealth = (req,res, next) => {
             console.log(req.body.fiber)
 
         if( healthStatus === req.body.is_healthy){
-            console.log ("line10" ,healthStatus)
-            next()
+            console.log ("line10 correct" ,healthStatus)
+            next();
         }else {
             console.log ("line13" ,healthStatus)
-            alert( "is_healthy status incorrect" );
-        next()
+            console.error( "is_healthy status incorrect" );
+        next();
         }
 
     }else if (req.body.added_sugar >= 6){
         
         if(req.body.is_healthy === healthStatus){
-            console.log ("line21" ,healthStatus)
-            next()
+            console.log ("line21 correct" , healthStatus)
+            next();
         }else {
             console.log ("line24" ,req.body.is_healthy)
-            alert( "is_healthy status incorrect" );
-            next()
+            console.error( "is_healthy status incorrect" );
+            next();
         }
+    } else{
+        
+        if(req.body.is_healthy === healthStatus){
+            console.log ("line30 correct" , healthStatus)
+            next();
+        }else {
+            console.log ("line33" ,req.body.is_healthy)
+            console.error( "is_healthy status incorrect" );
+            next();
+        }
+        
     }
 
 };

@@ -2,9 +2,10 @@ const express = require("express")
 
 const { getAllSnacks , getSnack , createSnack , deleteSnack, updateSnack } = require("../queries/snacks")
 
+const {confirmHealth} = require("../confirmHealth")
+
 const snacks = express.Router()
 
-// const { confirmHealth} = require('../confirmHealth')
 
 snacks.get("/", async (req , res) => {
     const allSnacks = await getAllSnacks()
@@ -30,7 +31,7 @@ snacks.get("/:id", async (req , res) => {
  })
  
  
- snacks.post("/",  async (req, res) => {
+ snacks.post("/", confirmHealth, async (req, res,next) => {
    try {
      const snack = await createSnack(req.body);
      res.json(snack);
@@ -48,21 +49,17 @@ snacks.get("/:id", async (req , res) => {
      res.status(200).json(deletedSnacks)
    }
    else{
-     res.status(404).json("Snacks not found")
+     res.status(404).json({error: "Snacks not found"})
    }
  })
  
  
  
  
- snacks.put("/:id",  async (req, res) => {
+ snacks.put("/:id",confirmHealth,  async (req, res, next) => {
    const { id } = req.params;
    const updatedSnacks = await updateSnack(id, req.body);
-   if(updatedSnacks){
-     res.status(200).json(updatedSnacks);
-   }else {
-    res.status(404).json({error:  "is_healthy status incorrect"})
-   }
+   res.status(200).json(updatedSnacks);
  });
 
 
