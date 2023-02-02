@@ -70,19 +70,37 @@ snacks.delete("/:id", async (req, res) => {
   }
 })
 
+// snacks.put(
+//   “/:id”,
+//   checkName,
+//   checkBoolean,
+//   validateAndSetImage,
+//   async (req, res) => {
+//     try {
+//       const { id } = req.params
+//       const updatedSnacks = await updateSnack(id, req.body)
+//       res.status(200).json(updatedSnacks)
+//     } catch (error) {
+//       res.status(404).json({ error: `Page not found` })
+//     }
+//   }
+// )
+
 snacks.put(
   "/:id",
   checkName,
   checkBoolean,
   validateAndSetImage,
-  validateAndSetImage,
   async (req, res) => {
-    const { id } = req.params
-    const updatedSnacks = await updateSnack(id, req.body)
-    updatedSnacks.id === true
-      ? res.status(200).json(updatedSnacks)
-      : res.status(404).json({ error: "Page not found" })
-  }
-)
+    const { id } = req.params;
+    const updatedSnacks = await updateSnack(id, req.body);
+    if (!updatedSnacks.message) {
+      res.status(200).json(updatedSnacks)
+    } else {
+   res.status(404).json({ error: `Page not found` })
+    }
+  });  
+  
+
 
 module.exports = snacks
